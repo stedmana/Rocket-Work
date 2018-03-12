@@ -51,6 +51,10 @@
       td:hover {
         background-color: #111113;
       }
+      td {
+        max-width: 50%;
+        max-height: 50%;
+      }
     }
   </style>
 </head>
@@ -62,9 +66,9 @@
 <div class="container">
   <h1>McGill Rocket Team</h1>
 </div>
-<table width="100%" border="2" cellspacing="0" cellpadding="5">
+<table id="table1" width="100%" border="2" cellspacing="0" cellpadding="5">
   <tr>
-    <td><canvas id="chart1"></canvas></td>
+    <td id="c1"><canvas id="chart1"></canvas></td>
     <td><canvas id="chart2"></canvas></td>
   </tr>
   <tr>
@@ -169,6 +173,8 @@
             }
         }
     });
+
+    var table = document.getElementById('table1');
 </script>
 
 </body>
