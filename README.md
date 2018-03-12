@@ -1,2 +1,2 @@
-#UI for McGill Rocket Team
-##Author Alex Stedman
+# UI for McGill Rocket Team
+## Author Alex Stedman
