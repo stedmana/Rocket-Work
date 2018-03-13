@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f084b9f6-0911-4bf0-b5e9-2b5968f29965" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Chart view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chart view/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="f084b9f6-0911-4bf0-b5e9-2b5968f29965" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -107,12 +105,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520891609359</updated>
-      <workItem from="1520891610577" duration="900000" />
+      <workItem from="1520891610577" duration="1398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="900000" />
+    <option name="totallyTimeSpent" value="1398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="0" />
