@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Team Rocket
+    </title>
+    <style>
+
+
+        body {
+            background-color: #46465c;
+            padding: 5px;
+        }
+
+        h1 {
+            color: #8b2516;
+            background-color: #46465c;
+            text-transform: uppercase;
+            position: center;
+            padding: 1px;
+
+        }
+
+        h2 {
+            color: magenta;
+            background-color: aliceblue;
+
+        }
+        sub {
+            color: rgba(74, 162, 89, 0.86);
+        }
+        table {
+            background-color: #1b1e21;
+        }
+        table.tableIn1 {
+            color: #8e92ac;
+        }
+        th {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 90%;
+            border-bottom: 2px solid #111111;
+            border-top: 1px solid #999;
+            text-align: left;}
+
+        td:hover {
+            background-color: #111113;
+        }
+        td {
+            max-width: 50%;
+            max-height: 50%;
+        }
+        ul {
+            position: relative;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            position: -webkit-sticky;
+            position: sticky;
+            float: left;
+
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-color: #111111;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #1b1a2e;
+        }
+
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.topnav li {float: left;}
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+        ul.topnav li a.active {background-color: #4CAF50;}
+
+        ul.topnav li.right {float: right;}
+
+        @media screen and (max-width: 600px){
+            ul.topnav li.right,
+            ul.topnav li {float: none;}
+        }
+
+    </style>
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js">
+
+</script>
+<div class="container">
+    <h1>McGill Rocket Team</h1>
+</div>
+<ul class="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Graphs.html">Graphs</a></li>
+    <li><a href="Tables.html">Tables</a></li>
+    <li><a href="All.html">Everything</a></li>
+</ul>
+<table id="table1" width="100%" border="2" cellspacing="0" cellpadding="5">
+    <tr>
+        <td id="c1"><canvas id="chart1"></canvas></td>
+        <td><canvas id="chart2"></canvas></td>
+    </tr>
+    <tr>
+        <td>
+            <canvas id="chart3"></canvas>
+        </td>
+        <td>
+            <table class="tableIn1" width="100%" border="2" cellspacing="0" cellpadding="1">
+                <tr>
+                    <td>
+                        Header1
+                    </td>
+                    <td>
+                        Header2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Info1
+                    </td>
+                    <td>
+                        Info2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        66
+                    </td>
+                    <td>
+                        644
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+</table>
+<script>
+    var ctx = document.getElementById('chart1').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+            datasets: [{
+                label: 'apples',
+                data: [12, 19, 3, 17, 6, 3, 7],
+                backgroundColor: "rgba(153,255,51,0.4)"
+            }, {
+                label: 'oranges',
+                data: [2, 29, 5, 5, 2, 3, 10],
+                backgroundColor: "rgba(255,153,0,0.4)"
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Fruit Per day'
+            }
+        }
+
+    });
+    var c2 = document.getElementById('chart2').getContext('2d');
+    var chart2 = new Chart(c2, {
+        type: 'bar',
+        data: {
+            labels: [0,1,2,3,4,5,6,7,8,9,19],
+            datasets: [{
+                label: 'apples',
+                data: [12, 19, 3, 17, 6, 3, 7,55,3,43],
+                backgroundColor: "rgba(153,255,51,0.4)"
+            }, {
+                label: 'oranges',
+                data: [2, 29, 5, 5, 2, 3, 10,4,33,32,12],
+                backgroundColor: "rgba(255,153,0,0.4)"
+            }],
+
+
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Value at time'
+            }
+        }
+    });
+    var c3 = document.getElementById('chart3').getContext('2d');
+    var chart3 = new Chart(c3, {
+        type: 'pie',
+        data: {
+            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+            datasets: [{
+                label: 'apples',
+                data: [12, 19, 3, 17, 6, 3, 7],
+                backgroundColor: "rgba(153,133,244,0.4)"
+            }, {
+                label: 'oranges',
+                data: [2, 29, 5, 5, 2, 3, 10],
+                backgroundColor: "rgba(255,153,99,0.4)"
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Hours of work per day (2 weeks)'
+            }
+        }
+    });
+    var c4 = document.getElementById('chart4').getContext('2d');
+    var chart4 = new Chart(c4, {
+        type: 'line',
+        data: {
+            labels: [0,1,2,3,4,5,6,7,8,9],
+            datasets: [{
+                label: 'apples',
+                data: [3,6,9,12,15,18,21,24,27],
+                backgroundColor: "rgba(153,255,51,0.4)"
+            }, {
+                label: 'oranges',
+                data: [2, 29, 5, 5, 2, 3, 10,55],
+                backgroundColor: "rgba(153,255,155,0.4)"
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Amount of effort put in'
+            }
+        }
+    });
+
+    var table = document.getElementById('table1');
+</script>
+
+</body>
+
+</html>

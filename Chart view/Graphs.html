@@ -1,112 +1,111 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <title>
-    Team Rocket
-  </title>
-  <style>
+    <title>
+        Graphs
+    </title>
+    <style>
 
 
-      body {
-        background-color: #46465c;
-        padding: 5px;
-      }
+        body {
+            background-color: #46465c;
+            padding: 5px;
+        }
 
-      h1 {
-        color: #8b2516;
-        background-color: #46465c;
-        text-transform: uppercase;
-        position: center;
-        padding: 1px;
+        h1 {
+            color: #8b2516;
+            background-color: #46465c;
+            text-transform: uppercase;
+            position: center;
+            padding: 1px;
 
-      }
+        }
 
-      h2 {
-        color: magenta;
-        background-color: aliceblue;
+        h2 {
+            color: magenta;
+            background-color: aliceblue;
 
-      }
-      sub {
-        color: rgba(74, 162, 89, 0.86);
-      }
-      table {
-        background-color: #1b1e21;
-      }
-      th {
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        font-size: 90%;
-        border-bottom: 2px solid #111111;
-        border-top: 1px solid #999;
-        text-align: left;}
+        }
+        sub {
+            color: rgba(74, 162, 89, 0.86);
+        }
+        table {
+            background-color: #1b1e21;
+        }
+        th {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 90%;
+            border-bottom: 2px solid #111111;
+            border-top: 1px solid #999;
+            text-align: left;}
 
-      td:hover {
-        background-color: #111113;
-      }
-      td {
-        max-width: 50%;
-        max-height: 50%;
-      }
-      ul {
-        position: relative;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
+        td:hover {
+            background-color: #111113;
+        }
+        td {
+            max-width: 50%;
+            max-height: 50%;
+        }
+        ul {
+            position: relative;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-      li {
-        position: -webkit-sticky;
-        position: sticky;
-        float: left;
+        li {
+            position: -webkit-sticky;
+            position: sticky;
+            float: left;
 
-      }
+        }
 
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        border-color: #111111;
-      }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-color: #111111;
+        }
 
-      /* Change the link color to #111 (black) on hover */
-      li a:hover {
-        background-color: #1b1a2e;
-      }
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #1b1a2e;
+        }
 
-      ul.topnav {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-      ul.topnav li {float: left;}
+        ul.topnav li {float: left;}
 
-      ul.topnav li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-      ul.topnav li a:hover:not(.active) {background-color: #111;}
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-      ul.topnav li a.active {background-color: #4CAF50;}
+        ul.topnav li a.active {background-color: #4CAF50;}
 
-      ul.topnav li.right {float: right;}
+        ul.topnav li.right {float: right;}
 
-      @media screen and (max-width: 600px){
-        ul.topnav li.right,
-        ul.topnav li {float: none;}
-      }
+        @media screen and (max-width: 600px){
+            ul.topnav li.right,
+            ul.topnav li {float: none;}
+        }
 
-  </style>
+    </style>
 </head>
 <body>
 
@@ -114,27 +113,27 @@
 
 </script>
 <div class="container">
-  <h1>McGill Rocket Team</h1>
+    <h1>McGill Rocket Team</h1>
 </div>
 <ul class="topnav">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="Graphs.html">Graphs</a></li>
-  <li><a href="Tables.html">Tables</a></li>
-  <li><a href="All.html">Everything</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Graphs.html">Graphs</a></li>
+    <li><a href="Tables.html">Tables</a></li>
+    <li><a href="All.html">Everything</a></li>
 </ul>
 <table id="table1" width="100%" border="2" cellspacing="0" cellpadding="5">
-  <tr>
-    <td id="c1"><canvas id="chart1"></canvas></td>
-    <td><canvas id="chart2"></canvas></td>
-  </tr>
-  <tr>
-    <td>
-      <canvas id="chart3"></canvas>
-    </td>
-    <td>
-      <canvas id="chart4"></canvas>
-    </td>
-  </tr>
+    <tr>
+        <td id="c1"><canvas id="chart1"></canvas></td>
+        <td><canvas id="chart2"></canvas></td>
+    </tr>
+    <tr>
+        <td>
+            <canvas id="chart3"></canvas>
+        </td>
+        <td>
+            <canvas id="chart4"></canvas>
+        </td>
+    </tr>
 
 </table>
 <script>
