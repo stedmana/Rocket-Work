@@ -1,0 +1,7 @@
+{
+  "name": "Chart-view",
+  "version": "0.0.1",
+  "dependencies": {
+    "serialport": "^6.1.1"
+  }
+}

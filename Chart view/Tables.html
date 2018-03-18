@@ -2,14 +2,17 @@
 <html>
 <head>
     <title>
-        Team Rocket
+        Tables Page
     </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
 
 
         body {
             background-color: #46465c;
             padding: 5px;
+            font-family: "Courier", Times, Serif;
+
         }
 
         h1 {
@@ -21,11 +24,7 @@
 
         }
 
-        h2 {
-            color: magenta;
-            background-color: aliceblue;
 
-        }
         sub {
             color: rgba(74, 162, 89, 0.86);
         }
@@ -108,6 +107,9 @@
             ul.topnav li.right,
             ul.topnav li {float: none;}
         }
+        table.table {
+            color: #788fda;
+        }
 
     </style>
 </head>
@@ -116,6 +118,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js">
 
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <div class="container">
     <h1>McGill Rocket Team</h1>
 </div>
@@ -125,7 +130,7 @@
     <li><a href="Tables.html">Tables</a></li>
     <li><a href="All.html">Everything</a></li>
 </ul>
-<table id="table1" width="100%" border="2" cellspacing="0" cellpadding="5">
+<!--<table id="table1" width="100%" border="2" cellspacing="0" cellpadding="5">
     <tr>
         <td id="c1"><canvas id="chart1"></canvas></td>
         <td><canvas id="chart2"></canvas></td>
@@ -164,7 +169,7 @@
         </td>
     </tr>
 
-</table>
+</table> -->
 <script>
     var ctx = document.getElementById('chart1').getContext('2d');
     var myChart = new Chart(ctx, {
@@ -260,6 +265,60 @@
 
     var table = document.getElementById('table1');
 </script>
+<script>
+    $(document).ready(function(){
+        $("h1").click(function(){
+            $(this).hide();
+        });
+        $("ul").click(function(){
+            $(this).hide();
+        })
+    });
+</script>
+<table class="table">
+    <tr>
+        <td>
+            Test1
+        </td>
+        <td>
+            Test2
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+        </td>
+        <td>
+
+        </td>
+    </tr>
+</table>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+    </tr>
+    <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+    </tr>
+    <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+    </tr>
+    </tbody>
+</table>
 
 </body>
 
