@@ -1,0 +1,21 @@
+<p>
+  user works! {{name}} {{age}}
+</p>
+<h1>I love {{address.city}}</h1>
+<h2>hobbies include{{hobbies}}</h2>
+
+<ul>
+  <li *ngFor="let hobby of hobbies">{{hobby}}
+    <button (click)="deleteHobby(hobby)">X</button>
+  </li>
+</ul>
+
+<button (click)="onClick()">click me</button>
+
+<form (submit)="addHobby(hobby.value)">
+  <div>
+    <label for="hobby">Hobby:</label>
+    <input type="text" #hobby>
+  </div> 
+
+</form>

@@ -2,6 +2,7 @@
   "name": "Chart-view",
   "version": "0.0.1",
   "dependencies": {
-    "serialport": "^6.1.1"
+    "serialport": "^6.1.1",
+    "sys": "^0.0.1"
   }
 }
